@@ -16,7 +16,7 @@ public class Tests
         Employee epl = new Employee("Liu", "Jo", 3, 7);
         int income = epl.getIncomeSum(2000);
 
-        Code.BugIf((income < 2000) || (income > 2000), "Income value was calculated wrong!");
+        Code.BugIf((income < 2000) && (income > 2000), "Income value was calculated wrong!");
     }
 
     [Test]
@@ -25,7 +25,7 @@ public class Tests
         Employee epl = new Employee("Hong", "Kong", 5, 7);
         int income = epl.getIncomeSum(2000);
 
-        Code.BugIf((income < 2000) || (income > 2000), "Income value was calculated wrong!");
+        Code.BugIf((income < 2000) && (income > 2000), "Income value was calculated wrong!");
     }
 
     [Test]
@@ -34,7 +34,7 @@ public class Tests
         Employee epl = new Employee("Hong", "Kong", 8, 7);
         int income = epl.getIncomeSum(2000);
 
-       Code.BugIf((income < 2200) || (income > 2200), "Income value was calculated wrong!");
+       Code.BugIf((income < 2200) && (income > 2200), "Income value was calculated wrong!");
     }
 
     [Test]
@@ -43,7 +43,7 @@ public class Tests
         Employee epl = new Employee("Chang", "Pun", 2, 10);
         int income = epl.getIncomeSum(2000);
 
-        Code.BugIf((income < 2000) || (income > 2000), "Income value was calculated wrong!");
+        Code.BugIf((income < 2000) && (income > 2000), "Income value was calculated wrong!");
     }
 
     [Test]
@@ -52,7 +52,7 @@ public class Tests
         Employee epl = new Employee("Shiu", "Lee", 2, 15);
         int income = epl.getIncomeSum(2000);
 
-        Code.BugIf((income < 2300) || (income > 2300), "Income value was calculated wrong!");
+        Code.BugIf((income < 2300) && (income > 2300), "Income value was calculated wrong!");
     }
 
     [Test]
@@ -61,7 +61,7 @@ public class Tests
         Employee epl = new Employee("Jacky", "Chang", 10, 17);
         int income = epl.getIncomeSum(3000);
 
-        Code.BugIf((income < 3795) || (income > 3795), "Income value was calculated wrong!");
+        Code.BugIf((income < 3795) && (income > 3795), "Income value was calculated wrong!");
     }
 
     [Test]
